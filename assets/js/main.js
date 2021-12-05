@@ -3,6 +3,16 @@ function focusSearch(){
    document.getElementById('border-search').classList.add('border-search-focus');
    document.getElementById('i-icon-search').style.color = 'var(--focus-search)';
    document.getElementById('input-search').style.backgroundColor = "#fff";
+   document.getElementById('bars-left').style.cssText = `
+                                                        opacity: 1;
+                                                        width: 0px;
+                                                        height: 0px;`;
+   document.getElementById('arrow-right').style.cssText = `
+                                                        opacity: 1;
+                                                        width: 40px;
+                                                        height: 40px;
+                                                        transform: rotateZ(180deg);
+                                                        transition: transform ease 0.3s;`;
 }
 
 // blur ra khỏi input search
@@ -15,11 +25,13 @@ function blurSearch() {
 // mousemove vào icon bars
 function mouseMoveBars() {
     document.getElementById('bars-left').classList.add('bars-left-mousemove');
+    document.getElementById('arrow-right').classList.add('bars-left-mousemove');
 }
 
 // mousemove ra khỏi icon bars
 function mouseOutBars() {
     document.getElementById('bars-left').classList.remove('bars-left-mousemove');
+    document.getElementById('arrow-right').classList.remove('bars-left-mousemove');
 }
 
 // clink show menu left
@@ -31,7 +43,7 @@ function clickShowMenuLeft() {
         nav_menu_left.style.cssText = `opacity: 0; animation: fadeOut linear 0.3s;`;
         nav_overlay.style.display = 'none';
     }else{
-        nav_menu_left.style.cssText = 'opacity: 1; animation: fadeIn linear 0.3s;';
+        nav_menu_left.style.cssText = 'opacity: 1;  z-index: 1;animation: fadeIn linear 0.3s;';
         nav_overlay.style.display = 'block';
     }
 }
