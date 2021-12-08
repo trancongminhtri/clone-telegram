@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <img class="login-logo" src="assets/imgs/logo.png" alt="">
+        <div class="login-title">Sign in to Telegram</div>
+        <p class="login-description">Please confirm your country and <br> enter your phone number.</p>
+        <form action="#">
+            <div class="login-form_country">
+                <label for="login_country">Quốc Gia</label>
+                <select name="" id="login_country" class="login-input-contries">
+                    <option value="1">Việt Nam</option>
+                    <option value="2">English</option>
+                </select>
+            </div>
+            <div class="login-form_phone">
+                <label for="login_phone">Phone number</label>
+                <input type="text" value="+84">
+            </div>
+            <div class="login-form_keep">
+                <input type="checkbox"> Keep me signed in
+            </div>
+            <div class="login-form_submit">
+                <button type="submit">NEXT</button>
+            </div>
+            <div class="login-form_qr-code">
+                <a href="#">LOG IN BY QR CODE</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
