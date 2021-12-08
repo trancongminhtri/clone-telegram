@@ -91,6 +91,7 @@
     opacity: 0;
     padding-top: 1rem;
     background-color: #fff;
+    z-index: 2;
 }
 
 .nav-menu-list {
@@ -183,8 +184,28 @@
     display: -webkit-box;
 }
 
-.chat-list {
+.user-list{
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0;
+    max-height: 92vh;
+    overflow: auto;
+}
+
+.user-link{
+    padding-right: 10px;
+}
+
+.user-list::-webkit-scrollbar {
+    width: 3px;
     height: 100%;
+    cursor: pointer;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 50px;
 }
 
 @media (max-width: 768px){
