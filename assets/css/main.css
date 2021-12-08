@@ -199,9 +199,9 @@
 /* Binh */
 
 .login-title {
-    font-weight: 500;
-    color: black;
-    font-size: 32px;
+  font-weight: 500;
+  color: black;
+  font-size: 32px;
 }
 
 .login-wrapbox {
@@ -212,11 +212,56 @@
   display: inline-block;
 }
 
+.field-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.field-wrapper input,
+.field-wrapper select {
+  border: 1px solid #dadce0;
+  padding: 15px;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.field-wrapper .field-placeholder {
+  font-size: 16px;
+  position: absolute;
+  bottom: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #80868b;
+  left: 8px;
+  padding: 0 8px;
+  -webkit-transform: scale(0.75) translateY(-39px) translateX(-60px);
+  transform: scale(0.75) translateY(-39px) translateX(-60px);
+  z-index: 1;
+  text-align: left;
+  width: 100%;
+}
+
+.field-wrapper .field-placeholder span {
+  background-color: #ffffff;
+  padding: 0px 8px;
+}
+
+.field-wrapper:hover {
+  color:rgb(51, 144, 236);
+  border-radius: 1rem;
+  border: 1px solid rgba(51 , 144, 236);
+}
+
+.login-form_submit button{
+  border-radius: 1rem;
+}
+
 .btn-qrcode {
-    background: white;
-    color:rgb(51, 144, 236)!important;
+  background: white;
+  color: rgb(51, 144, 236) !important;
 }
 
 .btn-qrcode:hover {
-    background-color: rgb(238, 246, 255)!important;
+  border-radius: 1rem;
+  background-color: rgb(238, 246, 255) !important;
 }
