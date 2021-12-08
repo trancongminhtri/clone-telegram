@@ -81,18 +81,19 @@
 }
 
 #nav-menu-left {
-  position: absolute;
-  width: 320px;
-  max-height: 100%;
-  max-width: 100%;
-  top: 60px;
-  left: 14px;
-  box-shadow: 0 0.25rem 0.5rem 0.125rem var(--color-shadow);
-  border-radius: 0.75rem;
-  overflow-y: auto;
-  opacity: 0;
-  padding-top: 1rem;
-  background-color: #fff;
+    position: absolute;
+    width: 320px;
+    max-height: 100%;
+    max-width: 100%;
+    top: 60px;
+    left: 14px;
+    box-shadow: 0 .25rem .5rem .125rem  var(--color-shadow);
+    border-radius: 0.75rem;
+    overflow-y: auto;
+    opacity: 0;
+    padding-top: 1rem;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .nav-menu-list {
@@ -185,8 +186,28 @@
   display: -webkit-box;
 }
 
-.chat-list {
-  height: 100%;
+.user-list{
+    z-index: 2;
+    position: relative;
+    top: 0px;
+    left: 0;
+    max-height: 92vh;
+    overflow: auto;
+}
+
+.user-link{
+    padding-right: 10px;
+}
+
+.user-list::-webkit-scrollbar {
+    width: 3px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 50px;
 }
 
 @media (max-width: 768px) {

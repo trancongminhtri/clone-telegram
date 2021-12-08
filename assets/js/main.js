@@ -43,7 +43,7 @@ function clickShowMenuLeft() {
         nav_menu_left.style.cssText = `opacity: 0; animation: fadeOut linear 0.3s;`;
         nav_overlay.style.display = 'none';
     }else{
-        nav_menu_left.style.cssText = 'opacity: 1;  z-index: 1;animation: fadeIn linear 0.3s;';
+        nav_menu_left.style.cssText = 'opacity: 1;  z-index: 3;animation: fadeIn linear 0.3s;';
         nav_overlay.style.display = 'block';
     }
 }
